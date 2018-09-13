@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using VehiclesSolid.Sea;
 
 namespace VehiclesSolid
 {
@@ -6,7 +8,19 @@ namespace VehiclesSolid
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+
+
+            List<IVehicle> SeaVehicles = new List<IVehicle>
+            {
+                new JetSki(),
+                new Houseboat()
+            };
+            foreach (IVehicle type in SeaVehicles)
+            {
+                type.Drive();
+            }
+
+            Console.ReadLine();
         }
     }
 }
