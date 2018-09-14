@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using VehiclesSolid.Land;
 using VehiclesSolid.Sea;
 
 namespace VehiclesSolid
@@ -8,7 +9,15 @@ namespace VehiclesSolid
     {
         static void Main(string[] args)
         {
-
+            List<IVehicle> LandVehicles = new List<IVehicle>
+            {
+                new Motorcycle(),
+                new Batmobile()
+            };
+            foreach (IVehicle type in LandVehicles)
+            {
+                type.Drive();
+            }
 
             List<IVehicle> SeaVehicles = new List<IVehicle>
             {
