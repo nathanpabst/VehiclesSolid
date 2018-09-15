@@ -1,20 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using VehiclesSolid._Interfaces;
 
 namespace VehiclesSolid.Land
 {
-    class Batmobile 
+    class Batmobile : LandBased
     {
         public int Wheels { get; set; } = 4;
         public int Doors { get; set; } = 2;
         public int PassengerCapacity { get; set; } = 2;
-        public bool Winged { get; set; } = false;
-        public string TransmissionType { get; set; } = "automatic";
         public double EngineVolume { get; set; } = 290;
-        public double MaxWaterSpeed { get; set; } = 0;
         public double MaxLandSpeed { get; set; } = 270;
-        public double MaxAirSpeed { get; set; } = 0;
 
         public void Start()
         {

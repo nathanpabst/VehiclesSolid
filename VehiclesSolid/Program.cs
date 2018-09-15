@@ -16,8 +16,9 @@ namespace VehiclesSolid
             var a10warthog = new a10Warthog();
             var cessna = new Cessna();
             var motorcycle = new Motorcycle();
+            var batmobile = new Batmobile();
 
-            var landvehicles = new List<LandBased> { motorcycle };
+            var landvehicles = new List<LandBased> { motorcycle, batmobile };
             foreach (var type in landvehicles)
             {
                 type.Drive();
