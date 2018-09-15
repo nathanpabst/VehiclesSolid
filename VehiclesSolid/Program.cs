@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using VehiclesSolid._Interfaces;
 using VehiclesSolid.Air;
 using VehiclesSolid.Land;
 using VehiclesSolid.Sea;
@@ -10,32 +11,14 @@ namespace VehiclesSolid
     {
         static void Main(string[] args)
         {
-            List<IVehicle> AirVehicles = new List<IVehicle>
-            {
-                new Cessna(),
-                new a10Warthog()
-            };
-            foreach (IVehicle type in AirVehicles)
-            {
-                type.Fly();
-            }
+            var jetski = new JetSki();
+            var houseboat = new Houseboat();
 
-            List<IVehicle> LandVehicles = new List<IVehicle>
-            {
-                new Motorcycle(),
-                new Batmobile()
-            };
-            foreach (IVehicle type in LandVehicles)
-            {
-                type.Drive();
-            }
+            
 
-            List<IVehicle> SeaVehicles = new List<IVehicle>
-            {
-                new JetSki(),
-                new Houseboat()
-            };
-            foreach (IVehicle type in SeaVehicles)
+            var seavehicles = new List<SeaBased> { jetski, houseboat };
+            
+            foreach (var type in seavehicles)
             {
                 type.Drive();
             }

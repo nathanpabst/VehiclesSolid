@@ -4,7 +4,9 @@ using System.Text;
 
 namespace VehiclesSolid._Interfaces
 {
-    interface SeaBased
+    public interface SeaBased : IVehicle
     {
+        double MaxWaterSpeed { get; }
+        void Drive();
     }
 }

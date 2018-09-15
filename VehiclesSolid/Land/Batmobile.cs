@@ -4,7 +4,7 @@ using System.Text;
 
 namespace VehiclesSolid.Land
 {
-    class Batmobile : IVehicle
+    class Batmobile 
     {
         public int Wheels { get; set; } = 4;
         public int Doors { get; set; } = 2;

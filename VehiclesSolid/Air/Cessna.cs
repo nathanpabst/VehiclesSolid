@@ -4,7 +4,7 @@ using System.Text;
 
 namespace VehiclesSolid.Air
 {
-    class Cessna : IVehicle
+    class Cessna 
     {
         public int Wheels { get; set; } = 3;
         public int Doors { get; set; } = 3;
