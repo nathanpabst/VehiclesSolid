@@ -13,8 +13,14 @@ namespace VehiclesSolid
         {
             var jetski = new JetSki();
             var houseboat = new Houseboat();
+            var a10warthog = new a10Warthog();
+            var cessna = new Cessna();
 
-            
+            var airvehicles = new List<AirBased> { a10warthog, cessna };
+            foreach (var type in airvehicles)
+            {
+                type.Fly();
+            }
 
             var seavehicles = new List<SeaBased> { jetski, houseboat };
             

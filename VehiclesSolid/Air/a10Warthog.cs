@@ -1,18 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using VehiclesSolid._Interfaces;
 
 namespace VehiclesSolid.Air
 {
-    class a10Warthog 
+    class a10Warthog : AirBased
     {
         public int Wheels { get; set; } = 3;
         public int Doors { get; set; } = 7;
         public int PassengerCapacity { get; set; } = 13;
         public bool Winged { get; set; } = true;
-        public string TransmissionType { get; set; } = "None";
         public double EngineVolume { get; set; } = 89.1;
-        public double MaxWaterSpeed { get; set; }
         public double MaxLandSpeed { get; set; } = 85;
         public double MaxAirSpeed { get; set; } = 400.5;
 
