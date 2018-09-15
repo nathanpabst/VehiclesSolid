@@ -4,7 +4,9 @@ using System.Text;
 
 namespace VehiclesSolid._Interfaces
 {
-    interface LandBased
+    public interface LandBased : IVehicle
     {
+        double MaxLandSpeed {get;}
+        void Drive();
     }
 }
