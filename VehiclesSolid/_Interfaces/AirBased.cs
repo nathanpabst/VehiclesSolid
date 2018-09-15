@@ -4,7 +4,10 @@ using System.Text;
 
 namespace VehiclesSolid._Interfaces
 {
-    interface AirBased
+    public interface AirBased : IVehicle
     {
+        bool Winged { get; }
+        double MaxAirSpeed { get; }
+        void Fly();
     }
 }
