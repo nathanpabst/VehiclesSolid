@@ -1,18 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using VehiclesSolid._Interfaces;
 
 namespace VehiclesSolid.Air
 {
-    class Cessna : IVehicle
+    class Cessna : AirBased
     {
         public int Wheels { get; set; } = 3;
         public int Doors { get; set; } = 3;
         public int PassengerCapacity { get; set; } = 113;
         public bool Winged { get; set; } = true;
-        public string TransmissionType { get; set; } = "None";
         public double EngineVolume { get; set; } = 31.1;
-        public double MaxWaterSpeed { get; set; }
         public double MaxLandSpeed { get; set; } = 85;
         public double MaxAirSpeed { get; set; } = 309.0;
 
